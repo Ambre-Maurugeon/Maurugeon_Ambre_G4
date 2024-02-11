@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript</title>
+    <link rel="stylesheet" href="styles_form.css" />
+    <link rel="stylesheet" href="..\Main\styles.css" />
+  </head>
+  <body class="dark">
+    <nav>
+      <img
+        src="..\images\WB.jpg"
+        alt="Logo Warner Bros"
+        width="40"
+        height="40"
+      />
+      <ul>
+        <li><a href="..\Main\index.html#Apropos">A propos</a></li>
+        <li><a href="..\Cartes\cartes.html" target="_blank">Mes cartes</a></li>
+        <li><a href="..\Event\th.html" target="_blank">Nos Events</a></li>
+        <li id="mon-compte">
+          <a href="../formulaires/index.html" target="_blank">Mon compte </a
+          ><svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-person-circle"
+            viewBox="0 0 16 16"
+          >
+            <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
+            <path
+              fill-rule="evenodd"
+              d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"
+            />
+          </svg>
+        </li>
+      </ul>
+    </nav>
+
+    <img
+      src="..\images\harry-potter.png"
+      alt="Logo Harry Potter"
+      width="150"
+      id="HPLogo"
+    />
+    <div class="introForm">
+      <div class="connect">
+        <hr />
+        <h1>INSCRIPTION</h1>
+        <hr />
+      </div>
+
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua.
+      </p>
+    </div>
+
+    <form action="">
+      <div>
+        <label for="firstname">Prénom</label>
+        <input type="text" id="firstname" placeholder="   Harry James" />
+      </div>
+
+      <div>
+        <label for="lastname">Nom</label>
+        <input type="text" id="lastname" placeholder="   Potter" />
+      </div>
+    </form>
+
+    <hr id="separationFormulaire" />
+    <div class="message-error">
+      <ul></ul>
+    </div>
+    <div class="message-success">Formulaire envoyé avec succès !</div>
+
+    <form action="" method="post" enctype="multipart/form-data" id="formulaire">
+      <div>
+        <label for="pseudo">Pseudo</label>
+        <input
+          type="text"
+          id="pseudo"
+          name="pseudo"
+          placeholder="   Harry Potter"
+        />
+      </div>
+
+      <div>
+        <label for="email">Email</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="   harry.potter@poudlard.magie"
+        />
+      </div>
+
+      <div>
+        <label for="password">Mot de passe</label>
+        <input
+          type="password"
+          id="password"
+          name="password2"
+          placeholder="   Mot de passe"
+        />
+      </div>
+
+      <div>
+        <label for="password2">Confirmation du mdp</label>
+        <input
+          type="password"
+          id="password2"
+          name="password2"
+          placeholder="   Mot de passe"
+        />
+      </div>
+
+      <button type="submit">S'inscrire</button>
+    </form>
+
+    <footer>
+      <h4 id="btn-darkmode">
+        <div class="activeMode">Activer le mode clair</div>
+      </h4>
+    </footer>
+
+    <!-- Script en javascript -->
+    <script src="main_form.js"></script>
+    <script src="..\Main\main.js"></script>
+  </body>
+</html>

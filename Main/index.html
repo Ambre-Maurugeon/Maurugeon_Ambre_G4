@@ -1,37 +1,43 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <!--  tjr la librairie en 1er  -->
+    <link rel="stylesheet" href="../swiperjs/styles_swiper.css" />
     <link rel="stylesheet" href="styles.css" />
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     <title>Page officieuse de la saga Harry Potter</title>
   </head>
-  <body>
-    <div class="header">
-      <video
-        id="video"
-        controls="false"
-        autoplay=""
-        loop=""
-        muted=""
-        playsinline=""
-        src="https://studiotour.warnerbros.fr/static/version1701350453/frontend/Warner/studiotour/fr_FR/images/warner/studiotour/home/sthp-banner-video.mp4"
-      ></video>
-      <div class="logos">
-        <img
-          src="../images\harry-potter.png"
-          alt="Logo Harry Potter"
-          width="300"
-        />
-        <img
-          src="../images\logo-wizard.png"
-          alt="Logo Wizard"
-          width="150"
-          id="logo-wizard"
-        />
+
+  <body class="dark">
+    <!--HTML-->
+    <div class="swiper mon-slider">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide slide-dw">
+          <p class="subtitle">Warner Bros Studio</p>
+          <p class="title">Un univers</p>
+        </div>
+        <div class="swiper-slide slide-cdeb">
+          <p class="subtitle">Warner Bros Studio</p>
+          <p class="title">Des attaches</p>
+        </div>
+        <div class="swiper-slide slide-cd">
+          <p class="subtitle">Warner Bros Studio</p>
+          <p class="title">Du suspens</p>
+        </div>
       </div>
+
+      <div class="swiper-pagination"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
     </div>
+
+    <div class="header"></div>
 
     <nav>
       <img
@@ -45,10 +51,7 @@
         <li><a href="..\Cartes\cartes.html" target="_blank">Mes cartes</a></li>
         <li><a href="..\Event\th.html" target="_blank">Nos Events</a></li>
         <li id="mon-compte">
-          <a
-            href="https://account.warnerbros.fr/customer/account/login/referer/aHR0cHM6Ly93aXphcmRpbmd3b3JsZC53YXJuZXJicm9zLmZyL3N1cHBvcnQvY29udGFjdC9pbmRleC8%2C/"
-            target="_blank"
-            >Mon compte </a
+          <a href="../formulaires/index.html" target="_blank">Mon compte </a
           ><svg
             xmlns="http://www.w3.org/2000/svg"
             width="16"
@@ -183,7 +186,11 @@
     </div>
 
     <footer>
-      <h4>Rejoignez-nous</h4>
+      <h4 id="btn-darkmode">
+        <div class="activeMode">Activer le mode clair</div>
+      </h4>
+
+      <h3>Rejoignez-nous</h3>
       <ul class="social-media">
         <li>
           <a
@@ -275,5 +282,10 @@
         </li>
       </ul>
     </footer>
+
+    <!-- JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="main.js"></script>
+    <script src="../swiperjs/main_swiper.js"></script>
   </body>
 </html>

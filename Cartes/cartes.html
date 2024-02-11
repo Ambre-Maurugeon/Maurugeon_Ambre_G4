@@ -3,13 +3,24 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/simplelightbox@2.14.2/dist/simple-lightbox.min.css"
+    />
+    <link rel="stylesheet" href="../portfolio/styles_folio.css" />
     <link rel="stylesheet" href="cartes.css" />
-    <link rel="stylesheet" href="..\Main\styles.css" />
+    <link rel="stylesheet" href="../Main/styles.css" />
 
     <title>Mes cartes</title>
   </head>
 
-  <body>
+  <body class="dark">
     <nav>
       <img
         src="..\images\WB.jpg"
@@ -18,15 +29,11 @@
         height="40"
       />
       <ul>
-        <li><a href="#Titre1">Titre 1</a></li>
-        <li><a href="#Titre2">Titre 2</a></li>
-        <li><a href="cartes.html" target="_blank">Mes cartes</a></li>
+        <li><a href="..\Main\index.html#Apropos">A propos</a></li>
+        <li><a href="..\Cartes\cartes.html" target="_blank">Mes cartes</a></li>
         <li><a href="..\Event\th.html" target="_blank">Nos Events</a></li>
         <li id="mon-compte">
-          <a
-            href="https://account.warnerbros.fr/customer/account/login/referer/aHR0cHM6Ly93aXphcmRpbmd3b3JsZC53YXJuZXJicm9zLmZyL3N1cHBvcnQvY29udGFjdC9pbmRleC8%2C/"
-            target="_blank"
-            >Mon compte </a
+          <a href="../formulaires/index.html" target="_blank">Mon compte </a
           ><svg
             xmlns="http://www.w3.org/2000/svg"
             width="16"
@@ -47,27 +54,79 @@
 
     <h1>Cartes des maisons</h1>
     <hr />
-    <div class="triptique">
-      <div class="bloc">
-        <img src="..\images\drap-bleu.jpg" alt="Triptique 1" width="200" />
-        <h4>Serdaigle</h4>
-      </div>
 
-      <div class="bloc">
-        <img src="..\images\drapeau_jaune.jpg" alt="Triptique 2" width="200" />
-        <h4>Poufsouffle</h4>
+    <main class="portfolio">
+      <div class="filters">
+        <ul>
+          <li data-filter="all" class="active">Toutes les maisons</li>
+          <li data-filter="serdaigle">Serdaigle</li>
+          <li data-filter="poufsouffle">Poufsouffle</li>
+          <li data-filter="gryffondor">Gryffondor</li>
+          <li data-filter="serpentard">Serpentard</li>
+        </ul>
       </div>
+      <div class="portfolio-elements">
+        <div class="card filtr-item" data-category="serdaigle">
+          <div class="card-header">
+            <p class="card-title">Maison</p>
+            <div class="card-axe">Serdaigle</div>
+          </div>
+          <a
+            href="https://images.unsplash.com/photo-1535905557558-afc4877a26fc?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDF8fGhhcnJ5JTIwcG90dGVyfGVufDB8fDB8fHww"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1535905557558-afc4877a26fc?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDF8fGhhcnJ5JTIwcG90dGVyfGVufDB8fDB8fHww"
+              alt="Echelle mystique"
+            />
+          </a>
+        </div>
 
-      <div class="bloc">
-        <img src="..\images\drap-rouge.jpg" alt="Triptique 3" width="200" />
-        <h4>Gryffondor</h4>
-      </div>
+        <div class="card filtr-item" data-category="poufsouffle">
+          <div class="card-header">
+            <p class="card-title">Maison</p>
+            <div class="card-axe">Poufsouffle</div>
+          </div>
+          <a
+            href="https://images.unsplash.com/photo-1600189261900-da2183219c28?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nzl8fGhhcnJ5JTIwcG90dGVyfGVufDB8fDB8fHww"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1600189261900-da2183219c28?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nzl8fGhhcnJ5JTIwcG90dGVyfGVufDB8fDB8fHww"
+              alt="Photographie merch Harry Potter"
+            />
+          </a>
+        </div>
 
-      <div class="bloc">
-        <img src="..\images\drap-verts.jpg" alt="Triptique 3" width="200" />
-        <h4>Serpentard</h4>
+        <div class="card filtr-item" data-category="gryffondor">
+          <div class="card-header">
+            <p class="card-title">Maison</p>
+            <div class="card-axe">Gryffondor</div>
+          </div>
+          <a
+            href="https://images.unsplash.com/photo-1600189261900-da2183219c28?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nzl8fGhhcnJ5JTIwcG90dGVyfGVufDB8fDB8fHww"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1600189261900-da2183219c28?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nzl8fGhhcnJ5JTIwcG90dGVyfGVufDB8fDB8fHww"
+              alt="Photographie merch Harry Potter"
+            />
+          </a>
+        </div>
+
+        <div class="card filtr-item" data-category="serpentard">
+          <div class="card-header">
+            <p class="card-title">Maison</p>
+            <div class="card-axe">Serpentard</div>
+          </div>
+          <a
+            href="https://images.unsplash.com/photo-1535905557558-afc4877a26fc?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDF8fGhhcnJ5JTIwcG90dGVyfGVufDB8fDB8fHww"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1535905557558-afc4877a26fc?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDF8fGhhcnJ5JTIwcG90dGVyfGVufDB8fDB8fHww"
+              alt="Echelle mystique"
+            />
+          </a>
+        </div>
       </div>
-    </div>
+    </main>
 
     <h1 id="titre-right">Cartes des personnages</h1>
     <hr />
@@ -115,21 +174,23 @@
         <img src="..\images\le-roux.png" alt="Triptique 3" width="200" />
         <h4>Serpentard</h4>
       </div>
-
-      <div class="bloc">
-        <img src="..\images\le-roux.png" alt="Triptique 3" width="200" />
-        <h4>Serpentard</h4>
-      </div>
-
-      <div class="bloc">
-        <img src="..\images\le-roux.png" alt="Triptique 3" width="200" />
-        <h4>Serpentard</h4>
-      </div>
-
-      <div class="bloc">
-        <img src="..\images\le-roux.png" alt="Triptique 3" width="200" />
-        <h4>Serpentard</h4>
-      </div>
     </div>
+
+    <footer>
+      <h4 id="btn-darkmode">
+        <div class="activeMode">Activer le mode clair</div>
+      </h4>
+    </footer>
+
+    <!-- JS -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/filterizr/2.2.4/vanilla.filterizr.min.js"
+      integrity="sha512-MMprw2AB5GAiQmXXEz5JYiGq2waU0iqD7Whj33m1w0V6Zzt1wyTFnr6rxWW8mfdQ/VksbUkU5c8sVGlO+3stew=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/simplelightbox@2.14.2/dist/simple-lightbox.min.js"></script>
+    <script src="../Main/main.js"></script>
+    <script src="../portfolio/main_folio.js"></script>
   </body>
 </html>

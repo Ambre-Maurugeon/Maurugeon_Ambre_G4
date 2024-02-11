@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/simplelightbox@2.14.2/dist/simple-lightbox.min.css"
+    />
+    <link rel="stylesheet" href="styles_folio.css" />
+  </head>
+  <body>
+    <main class="portfolio">
+      <div class="filters">
+        <ul>
+          <li data-filter="all" class="active">Tous les projets</li>
+          <li data-filter="cd">Crea Design</li>
+          <li data-filter="jv">Jeux videos</li>
+          <li data-filter="3d">Animation 3D</li>
+          <li data-filter="dw">Dev web</li>
+          <li data-filter="cdeb">Communication digitale</li>
+        </ul>
+      </div>
+      <div class="portfolio-elements">
+        <div class="card filtr-item" data-category="cd">
+          <div class="card-header">
+            <p class="card-title">Portal</p>
+            <div class="card-axe">Créa design</div>
+          </div>
+          <a
+            href="https://images.unsplash.com/photo-1535905557558-afc4877a26fc?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDF8fGhhcnJ5JTIwcG90dGVyfGVufDB8fDB8fHww"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1535905557558-afc4877a26fc?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDF8fGhhcnJ5JTIwcG90dGVyfGVufDB8fDB8fHww"
+              alt="Echelle mystique"
+            />
+          </a>
+        </div>
+
+        <div class="card filtr-item" data-category="jv">
+          <div class="card-header">
+            <p class="card-title">Portal</p>
+            <div class="card-axe">Jeux videos</div>
+          </div>
+          <a
+            href="https://images.unsplash.com/photo-1600189261900-da2183219c28?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nzl8fGhhcnJ5JTIwcG90dGVyfGVufDB8fDB8fHww"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1600189261900-da2183219c28?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nzl8fGhhcnJ5JTIwcG90dGVyfGVufDB8fDB8fHww"
+              alt="Photographie merch Harry Potter"
+            />
+          </a>
+        </div>
+
+        <div class="card filtr-item" data-category="3d">
+          <div class="card-header">
+            <p class="card-title">Portal</p>
+            <div class="card-axe">Animation 3D</div>
+          </div>
+          <a
+            href="https://images.unsplash.com/photo-1600189261900-da2183219c28?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nzl8fGhhcnJ5JTIwcG90dGVyfGVufDB8fDB8fHww"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1600189261900-da2183219c28?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nzl8fGhhcnJ5JTIwcG90dGVyfGVufDB8fDB8fHww"
+              alt="Photographie merch Harry Potter"
+            />
+          </a>
+        </div>
+      </div>
+    </main>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/filterizr/2.2.4/vanilla.filterizr.min.js"
+      integrity="sha512-MMprw2AB5GAiQmXXEz5JYiGq2waU0iqD7Whj33m1w0V6Zzt1wyTFnr6rxWW8mfdQ/VksbUkU5c8sVGlO+3stew=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/simplelightbox@2.14.2/dist/simple-lightbox.min.js"></script>
+    <!-- Script en javascript -->
+    <script src="main_folio.js"></script>
+  </body>
+</html>

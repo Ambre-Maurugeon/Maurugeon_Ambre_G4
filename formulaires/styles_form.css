@@ -1,0 +1,130 @@
+body {
+  color: white;
+  background-color: black;
+}
+
+nav {
+  margin-top: 0px !important;
+  position: static !important;
+}
+
+/*Connectez-vous*/
+#HPLogo {
+  display: flex;
+  margin: 20px auto;
+  margin-bottom: 0px;
+}
+
+.introForm {
+  width: 600px;
+  margin: auto;
+}
+
+.connect {
+  display: flex;
+}
+
+.connect h1 {
+  margin-inline: 40px;
+}
+
+.connect hr {
+  width: 100%;
+  height: 0px;
+  align-self: center;
+}
+
+.introForm p {
+  margin-top: 0px;
+  margin-bottom: 50px;
+}
+
+/* Form & formulaire */
+form {
+  margin: auto;
+  width: 600px;
+}
+
+#separationFormulaire {
+  width: 600px;
+}
+
+#formulaire {
+  margin-top: 20px !important;
+}
+
+form > div {
+  margin: 30px 80px;
+  align-items: center;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+input {
+  height: 40px;
+  width: 100%;
+  color: white;
+  background-color: black;
+  font-size: 15px;
+}
+
+.light input {
+  color: black;
+  background-color: white;
+  border: 1px solid rgb(161, 116, 32);
+}
+
+button {
+  width: 100%;
+  margin-bottom: 30px;
+  padding: 12px 32px;
+  cursor: pointer;
+  color: white;
+  font-size: 20px;
+  background-color: black;
+}
+
+.light button {
+  background-color: rgb(161, 116, 32);
+  border: none;
+}
+
+.message-error {
+  border: 1px solid rgb(212, 42, 0);
+  color: rgb(212, 42, 0);
+  background-color: rgba(212, 42, 0, 0.4);
+  padding: 16px 32px;
+  margin: 20px 200px;
+  display: none;
+}
+
+.message-error.visible {
+  /* ds le js on a add une class visible */
+  display: block;
+}
+
+.message-error.visible ul {
+  display: block;
+  list-style-type: circle;
+}
+
+.message-success {
+  border: 1px solid rgb(81, 150, 2);
+  color: rgb(81, 150, 2);
+  background-color: rgba(113, 212, 0, 0.4);
+  padding: 16px 32px;
+  margin: 20px 200px;
+  display: none;
+}
+
+.message-success.visible {
+  display: block;
+}
+
+.success {
+  border: 1px solid rgb(81, 150, 2);
+  background-color: rgba(81, 150, 2, 0.4);
+}

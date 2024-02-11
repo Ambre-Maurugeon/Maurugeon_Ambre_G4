@@ -9,6 +9,13 @@ body {
   color: white;
 }
 
+body.light {
+  margin: 0px;
+  font-family: sans-serif;
+  background-color: #fff5ee;
+  color: black;
+}
+
 a {
   text-decoration: none;
 }
@@ -33,20 +40,8 @@ h3 {
   font-size: 25px;
 }
 
-#video {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translate(-50%);
-  width: 100%;
-  height: 50vh;
-  object-fit: cover;
-  pointer-events: none;
-  z-index: -1;
-}
-
+/* Navbar */
 nav {
-  margin-top: 12.5vh;
   position: sticky;
   z-index: 2;
   background-color: black;
@@ -60,6 +55,10 @@ nav {
   border-color: rgb(36, 36, 47);
 }
 
+.light nav {
+  background-color: #fff5ee;
+}
+
 nav img {
   padding: 10px;
 }
@@ -69,7 +68,11 @@ nav a {
   padding: 10px;
 }
 
-nav a:hover {
+.light nav a {
+  color: black;
+}
+
+.dark nav a:hover {
   color: white;
 }
 
@@ -238,6 +241,15 @@ nav li:hover {
   gap: 50px;
 }
 
+/*Lightmode des containers A propos*/
+
+.light #titre-gauche,
+.light #sous-titre-gauche,
+.light .sous-container-animation h4,
+.light .sous-container-animation h3 {
+  color: #fff5ee;
+}
+
 /*Univers Saga*/
 .notre-univers {
   width: 700px;
@@ -328,7 +340,21 @@ nav li:hover {
   width: 100%;
 }
 
+.light #banniere-tableau {
+  opacity: 60%;
+  filter: sepia();
+}
+
 /*Footer */
+#btn-darkmode {
+  margin: auto;
+  border: #062427;
+  cursor: pointer;
+  border: 1px solid;
+  width: 150px;
+  padding: 20px;
+}
+
 footer {
   background-image: url(https://wizardingworld.warnerbros.fr/static/version1701350453/frontend/Warner/wizardingworld/fr_FR/images/home/footer_background.webp);
   padding: 20px;
@@ -337,6 +363,16 @@ footer {
 .social-media {
   justify-content: center;
   gap: 50px;
+  padding-left: 0px;
+}
+
+.light footer {
+  background-image: url(../images/banniere-blanche.png);
+  filter: sepia(40%);
+}
+
+.light .social-media svg {
+  color: black !important;
 }
 
 .hover-social-media :hover {

@@ -5,7 +5,7 @@ nav {
 hr,
 h1,
 h2 {
-  margin: 0px 150px;
+  margin: 0px 160px;
 }
 
 h1 {
@@ -45,7 +45,7 @@ h4 {
 .triptique {
   display: flex;
   justify-content: center;
-  gap: 80px;
+  gap: 75px;
   flex-wrap: wrap;
 }
 

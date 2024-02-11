@@ -1,0 +1,51 @@
+/*Exos JS*/
+
+* {
+  margin: 0;
+  font-size: 16px;
+  font-family: sans-serif;
+}
+
+.accordeon {
+  border: 1px solid rgba(146, 146, 146, 0.3);
+  width: 80%;
+  max-width: 600px;
+  margin: 10px auto;
+}
+
+.title {
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 8px 16px rgba(146, 146, 146, 0.3);
+}
+
+.title img {
+  width: 20px;
+  height: 20px;
+  transition: 0.4s;
+}
+
+.accordeon.open .title img {
+  transform-origin: center;
+  transform: rotate(90deg);
+}
+
+.title p {
+  font-weight: 700;
+}
+
+.content {
+  padding: 0px 20px;
+  height: 0;
+  visibility: hidden;
+  overflow: hidden;
+  transition: 0.4s;
+}
+
+.accordeon.open .content {
+  padding: 30px 20px;
+  height: auto;
+  visibility: visible;
+}
